@@ -1,0 +1,112 @@
+<!--
+   code by : Amirreza Heydari
+  Tel : 09395574353
+  
+-->
+<html lang="fa_IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iseokar.ir</title>
+    <style>
+      /* Font Dana Pro add page */
+      @font-face {
+        font-family: Danapro;
+        src: url("https://waregint.sirv.com/iseokar.ir/fonts/Dana-Regular.woff2")
+          format("woff2");
+        font-weight: 100;
+        font-style: normal;
+      }
+      /* Font Dana Pro add page */
+      body {
+        font-family: Danapro !important;
+      }
+      #circle-1 {
+        background: #e9efc0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        animation: random_color_background 1s 1s infinite;
+      }
+      #circle-2 {
+        background: #e9efc0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+        animation: random_color_background 0.75s 2s infinite;
+      }
+      #circle-3 {
+        background: #e9efc0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+        animation: random_color_background 0.5s 4s infinite;
+      }
+      @keyframes random_color {
+        0% {
+          color: #e9efc0;
+        }
+        50% {
+          color: #4e944f;
+        }
+        100% {
+          color: #e9efc0;
+        }
+      }
+      @keyframes random_color_background {
+        0% {
+          background-color: #e9efc0;
+        }
+        50% {
+          background-color: #4e944f;
+        }
+        100% {
+          background-color: #e9efc0;
+        }
+      }
+      #div-ifrm {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body id="body-1" style="width: 300px !important; margin: 0 auto">
+    <div style="margin: 0 auto" id="loading">
+      <h1
+        style="
+          text-align: center;
+          margin-top: 50px;
+          background-color: #e9efc0;
+          border-radius: 20px;
+          color: #e9efc0;
+          animation: random_color 1.5s infinite;
+        "
+      >
+        لطفا صبر کنید
+      </h1>
+      <div style="display: flex; justify-content: center" id="circles">
+        <canvas id="circle-1"></canvas>
+        <canvas id="circle-2"></canvas>
+        <canvas id="circle-3"></canvas>
+      </div>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function () {
+        var loading_div = document.getElementById("loading");
+        loading_div.style.display = "none";
+        if ((loading_div.style.display = "none")) {
+          for (let i = 0; i < 10; i++) {
+            document.write(
+              '<div id="div-ifrm" style = "display:inline-block; margin:10px;"><iframe id="ifrm" scrolling="no" width= "10px" height="10px" style = "border: solid 2px #000; margin:0 auto; padding:10px; display:inline-block;" src="https://iseokar.ir" title="طراحی سایت | سئوکار ام"></iframe></div>'
+            );
+          }
+        }
+      }, 2000);
+      setTimeout(function () {
+        document.location.href = "https://iseokar.ir";
+      }, 5000);
+    </script>
+  </body>
+</html>
